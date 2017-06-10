@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1614E1631EEB70F000DEE843 /* tabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614E1621EEB70F000DEE843 /* tabController.swift */; };
+		16164D101EE7A265009466CB /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16164D0F1EE7A265009466CB /* TableController.swift */; };
+		1632E87C1EE7A67B005D3276 /* BulletinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */; };
+		1687CD5E1EE904C00042AC2F /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 1687CD5D1EE904C00042AC2F /* chat.png */; };
+		1687CD641EE90AB70042AC2F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1687CD631EE90AB70042AC2F /* icon.png */; };
+		1687CD661EE90B1E0042AC2F /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1687CD651EE90B1E0042AC2F /* home.png */; };
+		1687CD681EE90B690042AC2F /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 1687CD671EE90B690042AC2F /* picture.png */; };
 		16C8A96C1EE099E0004326E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8A96B1EE099E0004326E0 /* AppDelegate.swift */; };
 		16C8A96E1EE099E0004326E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8A96D1EE099E0004326E0 /* ViewController.swift */; };
 		16C8A9711EE099E0004326E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A96F1EE099E0004326E0 /* Main.storyboard */; };
 		16C8A9731EE099E0004326E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A9721EE099E0004326E0 /* Assets.xcassets */; };
 		16C8A9761EE099E0004326E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A9741EE099E0004326E0 /* LaunchScreen.storyboard */; };
 		16C8A9811EE099E0004326E0 /* Penguin_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8A9801EE099E0004326E0 /* Penguin_AppTests.swift */; };
+		16C8A98F1EE09A25004326E0 /* Plus Math-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A98C1EE09A25004326E0 /* Plus Math-30.png */; };
+		16C8A9901EE09A25004326E0 /* User Filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A98D1EE09A25004326E0 /* User Filled-30.png */; };
+		16C8A9941EE09A3C004326E0 /* penguin.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A9931EE09A3C004326E0 /* penguin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1614E1621EEB70F000DEE843 /* tabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabController.swift; sourceTree = "<group>"; };
+		16164D0F1EE7A265009466CB /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinTableViewCell.swift; sourceTree = "<group>"; };
+		1687CD5D1EE904C00042AC2F /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chat.png; path = ../../chat.png; sourceTree = "<group>"; };
+		1687CD631EE90AB70042AC2F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
+		1687CD651EE90B1E0042AC2F /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../home.png; sourceTree = "<group>"; };
+		1687CD671EE90B690042AC2F /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = ../../picture.png; sourceTree = "<group>"; };
 		16C8A9681EE099E0004326E0 /* Penguin App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penguin App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8A96B1EE099E0004326E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C8A96D1EE099E0004326E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +53,9 @@
 		16C8A97C1EE099E0004326E0 /* Penguin AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Penguin AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8A9801EE099E0004326E0 /* Penguin_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penguin_AppTests.swift; sourceTree = "<group>"; };
 		16C8A9821EE099E0004326E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C8A98C1EE09A25004326E0 /* Plus Math-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Plus Math-30.png"; path = "../../Plus Math-30.png"; sourceTree = "<group>"; };
+		16C8A98D1EE09A25004326E0 /* User Filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Filled-30.png"; path = "../../User Filled-30.png"; sourceTree = "<group>"; };
+		16C8A9931EE09A3C004326E0 /* penguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = penguin.png; path = ../../../Desktop/penguin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +79,13 @@
 		16C8A95F1EE099DF004326E0 = {
 			isa = PBXGroup;
 			children = (
+				1687CD671EE90B690042AC2F /* picture.png */,
+				1687CD651EE90B1E0042AC2F /* home.png */,
+				1687CD631EE90AB70042AC2F /* icon.png */,
+				1687CD5D1EE904C00042AC2F /* chat.png */,
+				16C8A9931EE09A3C004326E0 /* penguin.png */,
+				16C8A98C1EE09A25004326E0 /* Plus Math-30.png */,
+				16C8A98D1EE09A25004326E0 /* User Filled-30.png */,
 				16C8A96A1EE099E0004326E0 /* Penguin App */,
 				16C8A97F1EE099E0004326E0 /* Penguin AppTests */,
 				16C8A9691EE099E0004326E0 /* Products */,
@@ -80,9 +107,12 @@
 				16C8A96B1EE099E0004326E0 /* AppDelegate.swift */,
 				16C8A96D1EE099E0004326E0 /* ViewController.swift */,
 				16C8A96F1EE099E0004326E0 /* Main.storyboard */,
+				1614E1621EEB70F000DEE843 /* tabController.swift */,
 				16C8A9721EE099E0004326E0 /* Assets.xcassets */,
 				16C8A9741EE099E0004326E0 /* LaunchScreen.storyboard */,
 				16C8A9771EE099E0004326E0 /* Info.plist */,
+				16164D0F1EE7A265009466CB /* TableController.swift */,
+				1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */,
 			);
 			path = "Penguin App";
 			sourceTree = "<group>";
@@ -180,6 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				16C8A9761EE099E0004326E0 /* LaunchScreen.storyboard in Resources */,
+				1687CD5E1EE904C00042AC2F /* chat.png in Resources */,
+				16C8A9901EE09A25004326E0 /* User Filled-30.png in Resources */,
+				1687CD641EE90AB70042AC2F /* icon.png in Resources */,
+				16C8A9941EE09A3C004326E0 /* penguin.png in Resources */,
+				1687CD661EE90B1E0042AC2F /* home.png in Resources */,
+				1687CD681EE90B690042AC2F /* picture.png in Resources */,
+				16C8A98F1EE09A25004326E0 /* Plus Math-30.png in Resources */,
 				16C8A9731EE099E0004326E0 /* Assets.xcassets in Resources */,
 				16C8A9711EE099E0004326E0 /* Main.storyboard in Resources */,
 			);
@@ -199,7 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1632E87C1EE7A67B005D3276 /* BulletinTableViewCell.swift in Sources */,
+				1614E1631EEB70F000DEE843 /* tabController.swift in Sources */,
 				16C8A96E1EE099E0004326E0 /* ViewController.swift in Sources */,
+				16164D101EE7A265009466CB /* TableController.swift in Sources */,
 				16C8A96C1EE099E0004326E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +448,7 @@
 				16C8A9871EE099E0004326E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16C8A9881EE099E0004326E0 /* Build configuration list for PBXNativeTarget "Penguin AppTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +457,7 @@
 				16C8A98A1EE099E0004326E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
