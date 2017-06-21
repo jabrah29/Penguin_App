@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FirebaseHandler.saveData(_b : String) -&gt; ():FirebaseHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.ref.url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.goButton(UIButton) -&gt; ():ViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
