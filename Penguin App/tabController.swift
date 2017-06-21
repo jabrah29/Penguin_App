@@ -8,13 +8,23 @@
 
 import UIKit
 
+
+protocol MyDelegateClass {
+    func btnAction()
+}
 class tabController: UITabBarController,UIPickerViewDataSource,UIPickerViewDelegate {
 
+    @IBOutlet weak var formSaveButton: UIBarButtonItem!
+    
+
     var data=["first","second","third"]
+    
 
     @IBAction func addButton(_ sender: Any) {
         picker.isHidden=false;
     }
+    
+    
     @IBOutlet weak var coupleInfoButton: UIBarButtonItem!
     var picker = UIPickerView()
     override func viewDidLoad() {
