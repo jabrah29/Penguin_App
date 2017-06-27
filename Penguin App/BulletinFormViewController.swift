@@ -15,16 +15,21 @@ class BulletinFormViewController: UIViewController {
     @IBOutlet weak var detailsText: UITextView!
     @IBOutlet weak var dateText: UITextField!
     @IBOutlet weak var timeText: UITextField!
+    var firebaseHandler:FirebaseHandler!
+
+    
     
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let rightButton = UIBarButtonItem(title: "Save", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        let rightButton = UIBarButtonItem(title: "Save", style: UIBarButtonItemStyle.plain, target: self, action: Selector(("getAllData")))
 
         self.tabBarController?.navigationItem.rightBarButtonItems = [rightButton]
         
+        firebaseHandler=FirebaseHandler()
+
         
         detailsText.layer.masksToBounds=false
         detailsText.layer.cornerRadius=7
@@ -40,6 +45,31 @@ class BulletinFormViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getAllData(){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        let dateInFormat = dateFormatter.string(from: NSDate() as Date)
+        let data=BulletinData(headline: headlineText.text!, details: detailsText.text!, date: dateText.text!, time: timeText.text!, timestamp: dateInFormat)
+        
+        firebaseHandler.saveBulletinData(category: "data", subcategory: "Bulletin", data: data)
+        let alertController = UIAlertController(title: "Success", message: "Hit back button to go back", preferredStyle: .alert)
+        
+        // Create the actions
+        
+        let cancelAction = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.cancel) {
+            UIAlertAction in
+            
+        }
+        
+        // Add the actions
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+        
+        // Present the controller
+        
     }
     
 

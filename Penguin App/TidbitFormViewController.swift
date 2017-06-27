@@ -36,10 +36,30 @@ class TidbitFormViewController: UIViewController {
     }
     
     func getAllData(){
-        let data=Tidbit(headline: headlineText.text!, blurb: blurbText.text, notify: notifySwitch.isOn )
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        let dateInFormat = dateFormatter.string(from: NSDate() as Date)
+        
+        let data=Tidbit(headline: headlineText.text!, blurb: blurbText.text, notify: notifySwitch.isOn, timestamp: dateInFormat)
+        
         firebaseHandler.saveTidbitData(category: "data", subcategory: "Tidbit", data: data)
+
+        let alertController = UIAlertController(title: "Success", message: "Hit back button to go back", preferredStyle: .alert)
         
+        // Create the actions
+
+        let cancelAction = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.cancel) {
+            UIAlertAction in
+            
+        }
         
+        // Add the actions
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
+
+        
+        // Present the controller
         
     }
 

@@ -8,6 +8,9 @@ target 'Penguin App' do
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'FacebookLogin'
+  pod 'FacebookCore'
+
   target 'Penguin AppTests' do
     inherit! :search_paths
     # Pods for testing

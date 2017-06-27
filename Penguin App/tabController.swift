@@ -15,6 +15,7 @@ protocol MyDelegateClass {
 class tabController: UITabBarController,UIPickerViewDataSource,UIPickerViewDelegate {
 
     @IBOutlet weak var formSaveButton: UIBarButtonItem!
+    @IBOutlet weak var refreshButton: UIBarButtonItem!
     
 
     var data=["first","second","third"]

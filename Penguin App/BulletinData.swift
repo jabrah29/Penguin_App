@@ -14,13 +14,15 @@ class BulletinData{
      let details:String
      let date:String
      let time:String
+     let timestamp: String
     
     
     
-    init(headline:String, details:String,date:String, time:String) {
+    init(headline:String, details:String,date:String, time:String, timestamp:String) {
         self.headline=headline
         self.details=details
         self.date=date
         self.time=time
+        self.timestamp=timestamp
     }
 }

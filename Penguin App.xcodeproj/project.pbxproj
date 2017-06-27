@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1044D15B07768BC70FE8C10B /* Pods_Penguin_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CDD1566F9ED962C9C064F5 /* Pods_Penguin_AppTests.framework */; };
 		1614E1631EEB70F000DEE843 /* tabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614E1621EEB70F000DEE843 /* tabController.swift */; };
 		16164D101EE7A265009466CB /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16164D0F1EE7A265009466CB /* TableController.swift */; };
 		1632E87C1EE7A67B005D3276 /* BulletinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */; };
@@ -16,12 +15,18 @@
 		16645CFE1EF889370053DC5E /* FirebaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16645CFD1EF889370053DC5E /* FirebaseHandler.swift */; };
 		16645D001EF88CF00053DC5E /* BulletinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16645CFF1EF88CF00053DC5E /* BulletinData.swift */; };
 		16645D021EF88F980053DC5E /* BulletinFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16645D011EF88F980053DC5E /* BulletinFormViewController.swift */; };
+		166901BA1EFB14D400D3AC12 /* restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 166901B91EFB14D400D3AC12 /* restart.png */; };
+		166901BC1EFB158600D3AC12 /* goals.png in Resources */ = {isa = PBXBuildFile; fileRef = 166901BB1EFB158600D3AC12 /* goals.png */; };
 		1687CD5E1EE904C00042AC2F /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 1687CD5D1EE904C00042AC2F /* chat.png */; };
 		1687CD641EE90AB70042AC2F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1687CD631EE90AB70042AC2F /* icon.png */; };
 		1687CD661EE90B1E0042AC2F /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1687CD651EE90B1E0042AC2F /* home.png */; };
 		1687CD681EE90B690042AC2F /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 1687CD671EE90B690042AC2F /* picture.png */; };
+		16AB723B1F00B4DA000F98B0 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AB723A1F00B4DA000F98B0 /* PopupViewController.swift */; };
 		16B2C45B1EFA25E600A632A2 /* Tidbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B2C45A1EFA25E600A632A2 /* Tidbit.swift */; };
 		16B2C45E1EFA2FDD00A632A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16B2C45D1EFA2FDD00A632A2 /* GoogleService-Info.plist */; };
+		16C1E5941EFC820600176E9A /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C1E5921EFC820600176E9A /* down.png */; };
+		16C1E5951EFC820600176E9A /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C1E5931EFC820600176E9A /* up.png */; };
+		16C2CA9D1F02D7FB0064BC24 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C2CA9C1F02D7FB0064BC24 /* User.swift */; };
 		16C8A96C1EE099E0004326E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8A96B1EE099E0004326E0 /* AppDelegate.swift */; };
 		16C8A96E1EE099E0004326E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C8A96D1EE099E0004326E0 /* ViewController.swift */; };
 		16C8A9711EE099E0004326E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A96F1EE099E0004326E0 /* Main.storyboard */; };
@@ -31,10 +36,13 @@
 		16C8A98F1EE09A25004326E0 /* Plus Math-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A98C1EE09A25004326E0 /* Plus Math-30.png */; };
 		16C8A9901EE09A25004326E0 /* User Filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A98D1EE09A25004326E0 /* User Filled-30.png */; };
 		16C8A9941EE09A3C004326E0 /* penguin.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C8A9931EE09A3C004326E0 /* penguin.png */; };
+		16EF69031F020D3E005B74DD /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EF69021F020D3E005B74DD /* fb.png */; };
+		16EF69051F020F87005B74DD /* 911Fonts.com_LucidaGrandeRegular__-_911fonts.com_fonts_ynWe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16EF69041F020F87005B74DD /* 911Fonts.com_LucidaGrandeRegular__-_911fonts.com_fonts_ynWe.ttf */; };
 		16F2A11C1EF71C870001ED92 /* P15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F2A11B1EF71C870001ED92 /* P15.jpg */; };
 		16F2A11E1EF73C5B0001ED92 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2A11D1EF73C5B0001ED92 /* ImageCollectionViewCell.swift */; };
 		16F2A1201EF73D7C0001ED92 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2A11F1EF73D7C0001ED92 /* InfoViewController.swift */; };
-		AF91BC1891B0FD02CA79ED55 /* Pods_Penguin_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F00603B762C616CB8BA3164 /* Pods_Penguin_App.framework */; };
+		7A9698AADF1ACD4089B773D9 /* Pods_Penguin_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1012EF81A02BA438B4C5C333 /* Pods_Penguin_AppTests.framework */; };
+		96A715D8EED2F0E1F84CA9A0 /* Pods_Penguin_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D98BFC165D4DB740F8D99A9 /* Pods_Penguin_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		075877ADECB19C65D0496813 /* Pods-Penguin App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penguin App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Penguin App/Pods-Penguin App.release.xcconfig"; sourceTree = "<group>"; };
+		0D98BFC165D4DB740F8D99A9 /* Pods_Penguin_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Penguin_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1012EF81A02BA438B4C5C333 /* Pods_Penguin_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Penguin_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1614E1621EEB70F000DEE843 /* tabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabController.swift; sourceTree = "<group>"; };
 		16164D0F1EE7A265009466CB /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinTableViewCell.swift; sourceTree = "<group>"; };
@@ -57,12 +66,18 @@
 		16645CFD1EF889370053DC5E /* FirebaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHandler.swift; sourceTree = "<group>"; };
 		16645CFF1EF88CF00053DC5E /* BulletinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinData.swift; sourceTree = "<group>"; };
 		16645D011EF88F980053DC5E /* BulletinFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinFormViewController.swift; sourceTree = "<group>"; };
+		166901B91EFB14D400D3AC12 /* restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restart.png; sourceTree = "<group>"; };
+		166901BB1EFB158600D3AC12 /* goals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goals.png; sourceTree = "<group>"; };
 		1687CD5D1EE904C00042AC2F /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chat.png; path = ../../chat.png; sourceTree = "<group>"; };
 		1687CD631EE90AB70042AC2F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
 		1687CD651EE90B1E0042AC2F /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../home.png; sourceTree = "<group>"; };
 		1687CD671EE90B690042AC2F /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = ../../picture.png; sourceTree = "<group>"; };
+		16AB723A1F00B4DA000F98B0 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		16B2C45A1EFA25E600A632A2 /* Tidbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tidbit.swift; sourceTree = "<group>"; };
 		16B2C45D1EFA2FDD00A632A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16C1E5921EFC820600176E9A /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		16C1E5931EFC820600176E9A /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		16C2CA9C1F02D7FB0064BC24 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		16C8A9681EE099E0004326E0 /* Penguin App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penguin App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8A96B1EE099E0004326E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C8A96D1EE099E0004326E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,14 +91,16 @@
 		16C8A98C1EE09A25004326E0 /* Plus Math-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Plus Math-30.png"; path = "../../Plus Math-30.png"; sourceTree = "<group>"; };
 		16C8A98D1EE09A25004326E0 /* User Filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Filled-30.png"; path = "../../User Filled-30.png"; sourceTree = "<group>"; };
 		16C8A9931EE09A3C004326E0 /* penguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = penguin.png; path = ../../../Desktop/penguin.png; sourceTree = "<group>"; };
+		16EF68FD1F01A017005B74DD /* Penguin App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Penguin App-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		16EF69021F020D3E005B74DD /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		16EF69041F020F87005B74DD /* 911Fonts.com_LucidaGrandeRegular__-_911fonts.com_fonts_ynWe.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "911Fonts.com_LucidaGrandeRegular__-_911fonts.com_fonts_ynWe.ttf"; sourceTree = "<group>"; };
 		16F2A11B1EF71C870001ED92 /* P15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = P15.jpg; path = ../../../Downloads/P15.jpg; sourceTree = "<group>"; };
 		16F2A11D1EF73C5B0001ED92 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		16F2A11F1EF73D7C0001ED92 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		3E314DB5FCF31BAE7B8ED404 /* Pods-Penguin AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penguin AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Penguin AppTests/Pods-Penguin AppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		41CDD1566F9ED962C9C064F5 /* Pods_Penguin_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Penguin_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F00603B762C616CB8BA3164 /* Pods_Penguin_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Penguin_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCA0BD3AE3711ED8601312D2 /* Pods-Penguin App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penguin App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Penguin App/Pods-Penguin App.debug.xcconfig"; sourceTree = "<group>"; };
-		D9346D91D04BAAC92EACC528 /* Pods-Penguin AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penguin AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Penguin AppTests/Pods-Penguin AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BD72E34912C5839BF244E84 /* Pods-Penguin AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penguin AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Penguin AppTests/Pods-Penguin AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D7D56ABDC415B2E4F7965EE /* Pods-Penguin App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penguin App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Penguin App/Pods-Penguin App.debug.xcconfig"; sourceTree = "<group>"; };
+		A7224B5E4F3B339A4C301A09 /* Pods-Penguin AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penguin AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Penguin AppTests/Pods-Penguin AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0A26DE107551FEE4A9831E3 /* Pods-Penguin App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penguin App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Penguin App/Pods-Penguin App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF91BC1891B0FD02CA79ED55 /* Pods_Penguin_App.framework in Frameworks */,
+				96A715D8EED2F0E1F84CA9A0 /* Pods_Penguin_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1044D15B07768BC70FE8C10B /* Pods_Penguin_AppTests.framework in Frameworks */,
+				7A9698AADF1ACD4089B773D9 /* Pods_Penguin_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +132,7 @@
 				16512C1F1EEB9CC4003130D8 /* TidbitFormViewController.swift */,
 				16F2A11F1EF73D7C0001ED92 /* InfoViewController.swift */,
 				16645D011EF88F980053DC5E /* BulletinFormViewController.swift */,
+				16AB723A1F00B4DA000F98B0 /* PopupViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -122,7 +140,9 @@
 		16B2C4591EFA25B400A632A2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				16645CFF1EF88CF00053DC5E /* BulletinData.swift */,
 				16B2C45A1EFA25E600A632A2 /* Tidbit.swift */,
+				16C2CA9C1F02D7FB0064BC24 /* User.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -138,6 +158,11 @@
 		16C8A95F1EE099DF004326E0 = {
 			isa = PBXGroup;
 			children = (
+				16EF69021F020D3E005B74DD /* fb.png */,
+				16C1E5921EFC820600176E9A /* down.png */,
+				16C1E5931EFC820600176E9A /* up.png */,
+				166901BB1EFB158600D3AC12 /* goals.png */,
+				166901B91EFB14D400D3AC12 /* restart.png */,
 				16B2C45C1EFA2FBA00A632A2 /* Resources */,
 				16F2A11B1EF71C870001ED92 /* P15.jpg */,
 				164E94691EEC761B00E83050 /* bulletin.png */,
@@ -151,8 +176,8 @@
 				16C8A96A1EE099E0004326E0 /* Penguin App */,
 				16C8A97F1EE099E0004326E0 /* Penguin AppTests */,
 				16C8A9691EE099E0004326E0 /* Products */,
-				A0B7EBC0F01621B84B3A9D0D /* Pods */,
-				FFA762F9333F613EB2610B29 /* Frameworks */,
+				918B4854AA63DAF50F152830 /* Pods */,
+				ECA9F728E49FE61C7A3519A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +193,8 @@
 		16C8A96A1EE099E0004326E0 /* Penguin App */ = {
 			isa = PBXGroup;
 			children = (
+				16EF69041F020F87005B74DD /* 911Fonts.com_LucidaGrandeRegular__-_911fonts.com_fonts_ynWe.ttf */,
+				16EF68FD1F01A017005B74DD /* Penguin App-Bridging-Header.h */,
 				16B2C4591EFA25B400A632A2 /* Data */,
 				16B2C4581EFA258200A632A2 /* Controllers */,
 				16C8A96B1EE099E0004326E0 /* AppDelegate.swift */,
@@ -178,7 +205,6 @@
 				1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */,
 				16F2A11D1EF73C5B0001ED92 /* ImageCollectionViewCell.swift */,
 				16645CFD1EF889370053DC5E /* FirebaseHandler.swift */,
-				16645CFF1EF88CF00053DC5E /* BulletinData.swift */,
 			);
 			path = "Penguin App";
 			sourceTree = "<group>";
@@ -192,22 +218,22 @@
 			path = "Penguin AppTests";
 			sourceTree = "<group>";
 		};
-		A0B7EBC0F01621B84B3A9D0D /* Pods */ = {
+		918B4854AA63DAF50F152830 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BCA0BD3AE3711ED8601312D2 /* Pods-Penguin App.debug.xcconfig */,
-				075877ADECB19C65D0496813 /* Pods-Penguin App.release.xcconfig */,
-				3E314DB5FCF31BAE7B8ED404 /* Pods-Penguin AppTests.debug.xcconfig */,
-				D9346D91D04BAAC92EACC528 /* Pods-Penguin AppTests.release.xcconfig */,
+				6D7D56ABDC415B2E4F7965EE /* Pods-Penguin App.debug.xcconfig */,
+				E0A26DE107551FEE4A9831E3 /* Pods-Penguin App.release.xcconfig */,
+				A7224B5E4F3B339A4C301A09 /* Pods-Penguin AppTests.debug.xcconfig */,
+				6BD72E34912C5839BF244E84 /* Pods-Penguin AppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FFA762F9333F613EB2610B29 /* Frameworks */ = {
+		ECA9F728E49FE61C7A3519A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8F00603B762C616CB8BA3164 /* Pods_Penguin_App.framework */,
-				41CDD1566F9ED962C9C064F5 /* Pods_Penguin_AppTests.framework */,
+				0D98BFC165D4DB740F8D99A9 /* Pods_Penguin_App.framework */,
+				1012EF81A02BA438B4C5C333 /* Pods_Penguin_AppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,12 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16C8A9851EE099E0004326E0 /* Build configuration list for PBXNativeTarget "Penguin App" */;
 			buildPhases = (
-				EF0F43BD03864728DDB591D9 /* [CP] Check Pods Manifest.lock */,
+				3844B054CD65D6D6681F7E1F /* [CP] Check Pods Manifest.lock */,
 				16C8A9641EE099E0004326E0 /* Sources */,
 				16C8A9651EE099E0004326E0 /* Frameworks */,
 				16C8A9661EE099E0004326E0 /* Resources */,
-				0B57C226511113B012AD4840 /* [CP] Embed Pods Frameworks */,
-				83C2454D125FE933E747103F /* [CP] Copy Pods Resources */,
+				86934AE721B1CD40FCD5D536 /* [CP] Embed Pods Frameworks */,
+				AE8492009730A9FC0C8AE924 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,12 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16C8A9881EE099E0004326E0 /* Build configuration list for PBXNativeTarget "Penguin AppTests" */;
 			buildPhases = (
-				CFA343243784794DF0A7B748 /* [CP] Check Pods Manifest.lock */,
+				CDCF3BF060144D008EF1821E /* [CP] Check Pods Manifest.lock */,
 				16C8A9781EE099E0004326E0 /* Sources */,
 				16C8A9791EE099E0004326E0 /* Frameworks */,
 				16C8A97A1EE099E0004326E0 /* Resources */,
-				42DCF559F44DB2C0CE5FD4A6 /* [CP] Embed Pods Frameworks */,
-				A0D8EC24DD4D124504673D83 /* [CP] Copy Pods Resources */,
+				98C53208B39A6F19EC890D4F /* [CP] Embed Pods Frameworks */,
+				F53D347F71FCFA8C8E555A4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +294,7 @@
 				TargetAttributes = {
 					16C8A9671EE099E0004326E0 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					16C8A97B1EE099E0004326E0 = {
@@ -304,14 +331,20 @@
 				16B2C45E1EFA2FDD00A632A2 /* GoogleService-Info.plist in Resources */,
 				16F2A11C1EF71C870001ED92 /* P15.jpg in Resources */,
 				16C8A9761EE099E0004326E0 /* LaunchScreen.storyboard in Resources */,
+				16C1E5941EFC820600176E9A /* down.png in Resources */,
 				1687CD5E1EE904C00042AC2F /* chat.png in Resources */,
+				16EF69031F020D3E005B74DD /* fb.png in Resources */,
 				16C8A9901EE09A25004326E0 /* User Filled-30.png in Resources */,
+				16EF69051F020F87005B74DD /* 911Fonts.com_LucidaGrandeRegular__-_911fonts.com_fonts_ynWe.ttf in Resources */,
 				1687CD641EE90AB70042AC2F /* icon.png in Resources */,
 				16C8A9941EE09A3C004326E0 /* penguin.png in Resources */,
 				1687CD661EE90B1E0042AC2F /* home.png in Resources */,
+				16C1E5951EFC820600176E9A /* up.png in Resources */,
 				164E946A1EEC761B00E83050 /* bulletin.png in Resources */,
 				1687CD681EE90B690042AC2F /* picture.png in Resources */,
 				16C8A98F1EE09A25004326E0 /* Plus Math-30.png in Resources */,
+				166901BA1EFB14D400D3AC12 /* restart.png in Resources */,
+				166901BC1EFB158600D3AC12 /* goals.png in Resources */,
 				16C8A9731EE099E0004326E0 /* Assets.xcassets in Resources */,
 				16C8A9711EE099E0004326E0 /* Main.storyboard in Resources */,
 			);
@@ -327,7 +360,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B57C226511113B012AD4840 /* [CP] Embed Pods Frameworks */ = {
+		3844B054CD65D6D6681F7E1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86934AE721B1CD40FCD5D536 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,7 +390,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Penguin App/Pods-Penguin App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		42DCF559F44DB2C0CE5FD4A6 /* [CP] Embed Pods Frameworks */ = {
+		98C53208B39A6F19EC890D4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,7 +405,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Penguin AppTests/Pods-Penguin AppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		83C2454D125FE933E747103F /* [CP] Copy Pods Resources */ = {
+		AE8492009730A9FC0C8AE924 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +420,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Penguin App/Pods-Penguin App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0D8EC24DD4D124504673D83 /* [CP] Copy Pods Resources */ = {
+		CDCF3BF060144D008EF1821E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F53D347F71FCFA8C8E555A4D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,36 +448,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Penguin AppTests/Pods-Penguin AppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CFA343243784794DF0A7B748 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EF0F43BD03864728DDB591D9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -430,12 +463,14 @@
 				1614E1631EEB70F000DEE843 /* tabController.swift in Sources */,
 				16F2A11E1EF73C5B0001ED92 /* ImageCollectionViewCell.swift in Sources */,
 				16C8A96E1EE099E0004326E0 /* ViewController.swift in Sources */,
+				16C2CA9D1F02D7FB0064BC24 /* User.swift in Sources */,
 				16164D101EE7A265009466CB /* TableController.swift in Sources */,
 				16B2C45B1EFA25E600A632A2 /* Tidbit.swift in Sources */,
 				16645D001EF88CF00053DC5E /* BulletinData.swift in Sources */,
 				16F2A1201EF73D7C0001ED92 /* InfoViewController.swift in Sources */,
 				16645CFE1EF889370053DC5E /* FirebaseHandler.swift in Sources */,
 				16C8A96C1EE099E0004326E0 /* AppDelegate.swift in Sources */,
+				16AB723B1F00B4DA000F98B0 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,13 +609,17 @@
 		};
 		16C8A9861EE099E0004326E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCA0BD3AE3711ED8601312D2 /* Pods-Penguin App.debug.xcconfig */;
+			baseConfigurationReference = 6D7D56ABDC415B2E4F7965EE /* Pods-Penguin App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Penguin App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jacob.Penguin-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Penguin App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 3.0;
 			};
@@ -588,13 +627,16 @@
 		};
 		16C8A9871EE099E0004326E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 075877ADECB19C65D0496813 /* Pods-Penguin App.release.xcconfig */;
+			baseConfigurationReference = E0A26DE107551FEE4A9831E3 /* Pods-Penguin App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Penguin App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jacob.Penguin-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Penguin App-Bridging-Header.h";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 3.0;
 			};
@@ -602,7 +644,7 @@
 		};
 		16C8A9891EE099E0004326E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E314DB5FCF31BAE7B8ED404 /* Pods-Penguin AppTests.debug.xcconfig */;
+			baseConfigurationReference = A7224B5E4F3B339A4C301A09 /* Pods-Penguin AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -617,7 +659,7 @@
 		};
 		16C8A98A1EE099E0004326E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9346D91D04BAAC92EACC528 /* Pods-Penguin AppTests.release.xcconfig */;
+			baseConfigurationReference = 6BD72E34912C5839BF244E84 /* Pods-Penguin AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

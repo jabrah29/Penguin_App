@@ -3,6 +3,12 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "FirebaseHandler.loadTidbitData() -&gt; ():FirebaseHandler.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FirebaseHandler.loadBulletinData(view : TableController) -&gt; ():FirebaseHandler.swift">
+      </ContextState>
+      <ContextState
          contextName = "FirebaseHandler.saveData(_b : String) -&gt; ():FirebaseHandler.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,7 +17,41 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "TableController.refreshTidbit(newData : Tidbit) -&gt; ():TableController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad() -&gt; ():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TableController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:TableController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bulletinListData.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.goButton(UIButton) -&gt; ():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FirebaseHandler.(loadBulletinData(view : TableController) -&gt; ()).(closure #1):FirebaseHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "items.value(forKey: &quot;headline&quot;) as? String">
+            </PersistentString>
+            <PersistentString
+               value = "item.value(&quot;headline&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "x">
+            </PersistentString>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FirebaseHandler.(loadTidbitData() -&gt; ()).(closure #1):FirebaseHandler.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

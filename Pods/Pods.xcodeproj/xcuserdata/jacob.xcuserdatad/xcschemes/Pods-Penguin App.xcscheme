@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8DE53F59591197BB200962B40073FE10"
+               BlueprintIdentifier = "D93F4CC79F72AA95B1CC26717265CAA5"
                BuildableName = "Pods_Penguin_App.framework"
                BlueprintName = "Pods-Penguin App"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DE53F59591197BB200962B40073FE10"
+            BlueprintIdentifier = "D93F4CC79F72AA95B1CC26717265CAA5"
             BuildableName = "Pods_Penguin_App.framework"
             BlueprintName = "Pods-Penguin App"
             ReferencedContainer = "container:Pods.xcodeproj">
