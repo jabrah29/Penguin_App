@@ -3,32 +3,13 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "FirebaseHandler.loadTidbitData() -&gt; ():FirebaseHandler.swift">
+         contextName = "TableController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:TableController.swift">
       </ContextState>
       <ContextState
          contextName = "FirebaseHandler.loadBulletinData(view : TableController) -&gt; ():FirebaseHandler.swift">
       </ContextState>
       <ContextState
-         contextName = "FirebaseHandler.saveData(_b : String) -&gt; ():FirebaseHandler.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.ref.url">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "TableController.refreshTidbit(newData : Tidbit) -&gt; ():TableController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.viewDidLoad() -&gt; ():ViewController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "TableController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:TableController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "bulletinListData.count">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "FirebaseHandler.loadTidbitData() -&gt; ():FirebaseHandler.swift">
       </ContextState>
       <ContextState
          contextName = "ViewController.goButton(UIButton) -&gt; ():ViewController.swift">
@@ -51,7 +32,63 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "FirebaseHandler.saveData(_b : String) -&gt; ():FirebaseHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.ref.url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableController.refreshTidbit(newData : Tidbit) -&gt; ():TableController.swift">
+      </ContextState>
+      <ContextState
          contextName = "FirebaseHandler.(loadTidbitData() -&gt; ()).(closure #1):FirebaseHandler.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TableController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:TableController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bulletinListData.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized FirebaseHandler.(loadBulletinData(view : TableController, user : String) -&gt; ()).(closure #1):FirebaseHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "values">
+            </PersistentString>
+            <PersistentString
+               value = "childFirbs">
+            </PersistentString>
+            <PersistentString
+               value = "convert.details">
+            </PersistentString>
+            <PersistentString
+               value = "convert?.value(forKey: &quot;details&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "convert.value">
+            </PersistentString>
+            <PersistentString
+               value = "child.value">
+            </PersistentString>
+            <PersistentString
+               value = "dict">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FirebaseHandler.(loadBulletinData(view : TableController, user : String) -&gt; ()).(closure #1):FirebaseHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "convert.value(forKey: &quot;date&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad() -&gt; ():ViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

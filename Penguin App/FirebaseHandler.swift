@@ -25,10 +25,10 @@ class FirebaseHandler{
     }
     
     
-    func loadTidbitData(view:TableController){
+    func loadTidbitData(view:TableController, user: String ){
         var tidbitLoad:Tidbit!
         self.ref = Database.database().reference()
-        ref.child("data").child("Tidbit").observe(.childAdded, with: {(snapshot) in
+        ref.child("data").child(user).child("Tidbit").observe(.childAdded, with: {(snapshot) in
         
             if let item=snapshot.value as? NSObject{
                 let hdline = item.value(forKey: "headline") as? String
@@ -57,20 +57,30 @@ class FirebaseHandler{
 
     
     
-    func loadBulletinData(view:TableController){
+    func loadBulletinData(view:TableController, user:String){
+        var bullet:BulletinData!
         self.ref = Database.database().reference()
         var list=[BulletinData]()
-        ref.child("data").child("Bulletin").observe(.value, with: { snapshot in
+        ref.child("Bulletin").observe(.value, with: { snapshot in
             for child in snapshot.children {
-                
-                let convert = child as! DataSnapshot
-                 let dict = convert.value as! [String: String]
-                let bulletin=BulletinData(headline: dict["headline"]!, details: dict["details"]!, date: dict["date"]!, time: dict["time"]!, timestamp: dict["timestamp"]!)
-                list.append(bulletin)
-                print(bulletin.timestamp)
-                
-                
-            }
+                let temp: DataSnapshot = (child as? DataSnapshot)!
+                if let item=temp.value as? NSObject{
+                    let hdline = item.value(forKey: "headline") as? String
+                    let det = item.value(forKey: "details") as? String
+                    let dateBul=item.value(forKey: "date") as? String
+                    let ts=item.value(forKey: "timestamp") as? String
+                    let user=item.value(forKey: "userId") as? String
+                    let timer=item.value(forKey: "time") as? String
+                    bullet = BulletinData(headline: hdline!, details: det!, date: dateBul!, time: timer!, timestamp: ts!, user: user!)
+                    
+                    list.append(bullet)
+                }else{
+                    print("error")
+                }
+//                print(bulletin.timestamp)
+//
+//                
+          }
             view.updateBulletinList(newData: list)
         })
     
@@ -79,22 +89,22 @@ class FirebaseHandler{
         
     }
     
-    func saveBulletinData(category: String , subcategory: String, data:BulletinData){
+    func saveBulletinData(user: String, category: String , data:BulletinData){
         self.ref = Database.database().reference()
         
+        self.ref.child(category).childByAutoId().setValue(saveBulletin(obj: data))
         
         
-        self.ref.child(category).child(subcategory).child(data.timestamp).setValue(saveBulletin(obj: data))
         
     }
     
     
     
     
-    func saveTidbitData(category: String , subcategory: String, data:Tidbit){
+    func saveTidbitData(category: String , subcategory: String, data:Tidbit, user:String){
         self.ref = Database.database().reference()
     
-        self.ref.child(category).child(subcategory).child(data.timestamp).setValue(saveTidbit(obj:data))
+        self.ref.child(category).child(user).child(subcategory).child(data.timestamp).setValue(saveTidbit(obj:data))
     
     }
     func saveTidbit<T:Tidbit>(obj:T) -> [AnyHashable:Any] {
@@ -107,7 +117,7 @@ class FirebaseHandler{
     }
     
     func saveBulletin<T:BulletinData>(obj:T) -> [AnyHashable:Any] {
-        return ["headline":obj.headline, "details":obj.details, "date":obj.date, "time":obj.time, "timestamp":obj.timestamp] as [AnyHashable:Any]
+        return ["headline":obj.headline, "details":obj.details, "date":obj.date, "time":obj.time, "timestamp":obj.timestamp, "userId": obj.userId] as [AnyHashable:Any]
     }
     func loadData(){
         

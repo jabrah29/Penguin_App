@@ -28,6 +28,7 @@ class ViewController: UIViewController, UIApplicationDelegate {
     }
     
 
+    var currentUser: User!
 
     
     @objc func loginButtonClicked() {
@@ -38,7 +39,7 @@ class ViewController: UIViewController, UIApplicationDelegate {
                 print(error)
             case .cancelled:
                 print("User cancelled login.")
-            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+            case .success(let _, let _, let accessToken):
                 print("Logged in!")
                 FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name,last_name, picture.type(large),email,updated_time"]).start(completionHandler: { (connection, result, error) -> Void in
                     if (error == nil){
@@ -50,6 +51,8 @@ class ViewController: UIViewController, UIApplicationDelegate {
                             sendId = userDict["id"] as! String
                             print(first_Name)
                             print(last_Name)
+                            self.currentUser=User(firstName: first_Name, lastName: last_Name, idInput: sendId, otherPerson: "1464565813325810")
+
                             
                            // self.addtoFirebase(firstname: first_Name, lastname: last_Name, id: sendId)
 
@@ -58,7 +61,10 @@ class ViewController: UIViewController, UIApplicationDelegate {
                         }
                         
                         if sendId == "1464565813565890"{
+                            
                             let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "tomain") as! tabController!
+
+                            TableController.setUser(usr: self.currentUser)
                             self.present(destinationController!, animated: true, completion: nil)
                         }
                 }
@@ -70,8 +76,8 @@ class ViewController: UIViewController, UIApplicationDelegate {
     
     func addtoFirebase(firstname:String, lastname:String, id:String){
        let fbHandler = FirebaseHandler()
-        let current = User(firstName: firstname, lastName: lastname, idInput: id, otherPerson: "5568399694")
-        fbHandler.addNewUser(newUser: current)
+        currentUser = User(firstName: firstname, lastName: lastname, idInput: id, otherPerson: "5568399694")
+        fbHandler.addNewUser(newUser: currentUser)
         
     }
     

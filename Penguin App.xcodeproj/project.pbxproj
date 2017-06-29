@@ -12,6 +12,13 @@
 		1632E87C1EE7A67B005D3276 /* BulletinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */; };
 		164E946A1EEC761B00E83050 /* bulletin.png in Resources */ = {isa = PBXBuildFile; fileRef = 164E94691EEC761B00E83050 /* bulletin.png */; };
 		16512C201EEB9CC4003130D8 /* TidbitFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16512C1F1EEB9CC4003130D8 /* TidbitFormViewController.swift */; };
+		166155CB1F0424C300A70D45 /* vin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 166155C51F0424C300A70D45 /* vin.jpeg */; };
+		166155CC1F0424C300A70D45 /* couple1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 166155C61F0424C300A70D45 /* couple1.jpeg */; };
+		166155CD1F0424C300A70D45 /* couple3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 166155C71F0424C300A70D45 /* couple3.jpeg */; };
+		166155CE1F0424C300A70D45 /* couple2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 166155C81F0424C300A70D45 /* couple2.jpeg */; };
+		166155CF1F0424C300A70D45 /* couple4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 166155C91F0424C300A70D45 /* couple4.jpeg */; };
+		166155D01F0424C300A70D45 /* couple5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 166155CA1F0424C300A70D45 /* couple5.jpeg */; };
+		166155D21F04AE1D00A70D45 /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 166155D11F04AE1D00A70D45 /* cover.jpg */; };
 		16645CFE1EF889370053DC5E /* FirebaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16645CFD1EF889370053DC5E /* FirebaseHandler.swift */; };
 		16645D001EF88CF00053DC5E /* BulletinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16645CFF1EF88CF00053DC5E /* BulletinData.swift */; };
 		16645D021EF88F980053DC5E /* BulletinFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16645D011EF88F980053DC5E /* BulletinFormViewController.swift */; };
@@ -63,6 +70,13 @@
 		1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinTableViewCell.swift; sourceTree = "<group>"; };
 		164E94691EEC761B00E83050 /* bulletin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bulletin.png; path = ../../bulletin.png; sourceTree = "<group>"; };
 		16512C1F1EEB9CC4003130D8 /* TidbitFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidbitFormViewController.swift; sourceTree = "<group>"; };
+		166155C51F0424C300A70D45 /* vin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vin.jpeg; sourceTree = "<group>"; };
+		166155C61F0424C300A70D45 /* couple1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = couple1.jpeg; sourceTree = "<group>"; };
+		166155C71F0424C300A70D45 /* couple3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = couple3.jpeg; sourceTree = "<group>"; };
+		166155C81F0424C300A70D45 /* couple2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = couple2.jpeg; sourceTree = "<group>"; };
+		166155C91F0424C300A70D45 /* couple4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = couple4.jpeg; sourceTree = "<group>"; };
+		166155CA1F0424C300A70D45 /* couple5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = couple5.jpeg; sourceTree = "<group>"; };
+		166155D11F04AE1D00A70D45 /* cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpg; sourceTree = "<group>"; };
 		16645CFD1EF889370053DC5E /* FirebaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHandler.swift; sourceTree = "<group>"; };
 		16645CFF1EF88CF00053DC5E /* BulletinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinData.swift; sourceTree = "<group>"; };
 		16645D011EF88F980053DC5E /* BulletinFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinFormViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +172,13 @@
 		16C8A95F1EE099DF004326E0 = {
 			isa = PBXGroup;
 			children = (
+				166155D11F04AE1D00A70D45 /* cover.jpg */,
+				166155C51F0424C300A70D45 /* vin.jpeg */,
+				166155C61F0424C300A70D45 /* couple1.jpeg */,
+				166155C71F0424C300A70D45 /* couple3.jpeg */,
+				166155C81F0424C300A70D45 /* couple2.jpeg */,
+				166155C91F0424C300A70D45 /* couple4.jpeg */,
+				166155CA1F0424C300A70D45 /* couple5.jpeg */,
 				16EF69021F020D3E005B74DD /* fb.png */,
 				16C1E5921EFC820600176E9A /* down.png */,
 				16C1E5931EFC820600176E9A /* up.png */,
@@ -330,20 +351,27 @@
 			files = (
 				16B2C45E1EFA2FDD00A632A2 /* GoogleService-Info.plist in Resources */,
 				16F2A11C1EF71C870001ED92 /* P15.jpg in Resources */,
+				166155CC1F0424C300A70D45 /* couple1.jpeg in Resources */,
 				16C8A9761EE099E0004326E0 /* LaunchScreen.storyboard in Resources */,
 				16C1E5941EFC820600176E9A /* down.png in Resources */,
+				166155D21F04AE1D00A70D45 /* cover.jpg in Resources */,
 				1687CD5E1EE904C00042AC2F /* chat.png in Resources */,
+				166155CB1F0424C300A70D45 /* vin.jpeg in Resources */,
 				16EF69031F020D3E005B74DD /* fb.png in Resources */,
 				16C8A9901EE09A25004326E0 /* User Filled-30.png in Resources */,
 				16EF69051F020F87005B74DD /* 911Fonts.com_LucidaGrandeRegular__-_911fonts.com_fonts_ynWe.ttf in Resources */,
+				166155CE1F0424C300A70D45 /* couple2.jpeg in Resources */,
 				1687CD641EE90AB70042AC2F /* icon.png in Resources */,
 				16C8A9941EE09A3C004326E0 /* penguin.png in Resources */,
 				1687CD661EE90B1E0042AC2F /* home.png in Resources */,
 				16C1E5951EFC820600176E9A /* up.png in Resources */,
 				164E946A1EEC761B00E83050 /* bulletin.png in Resources */,
+				166155CD1F0424C300A70D45 /* couple3.jpeg in Resources */,
 				1687CD681EE90B690042AC2F /* picture.png in Resources */,
 				16C8A98F1EE09A25004326E0 /* Plus Math-30.png in Resources */,
+				166155D01F0424C300A70D45 /* couple5.jpeg in Resources */,
 				166901BA1EFB14D400D3AC12 /* restart.png in Resources */,
+				166155CF1F0424C300A70D45 /* couple4.jpeg in Resources */,
 				166901BC1EFB158600D3AC12 /* goals.png in Resources */,
 				16C8A9731EE099E0004326E0 /* Assets.xcassets in Resources */,
 				16C8A9711EE099E0004326E0 /* Main.storyboard in Resources */,

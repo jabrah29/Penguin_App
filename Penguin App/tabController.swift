@@ -17,6 +17,7 @@ class tabController: UITabBarController,UIPickerViewDataSource,UIPickerViewDeleg
     @IBOutlet weak var formSaveButton: UIBarButtonItem!
     @IBOutlet weak var refreshButton: UIBarButtonItem!
     
+    var currentUser:User!
 
     var data=["first","second","third"]
     
@@ -25,7 +26,10 @@ class tabController: UITabBarController,UIPickerViewDataSource,UIPickerViewDeleg
         picker.isHidden=false;
     }
     
-    
+
+    func getCurrentUser() -> User{
+        return currentUser
+    }
     @IBOutlet weak var coupleInfoButton: UIBarButtonItem!
     var picker = UIPickerView()
     override func viewDidLoad() {

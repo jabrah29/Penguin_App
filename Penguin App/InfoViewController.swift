@@ -10,9 +10,12 @@ import UIKit
 
 class InfoViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var imageArray=[UIImage(named:"P15.jpg"),UIImage(named:"P15.jpg")];
+    var imageArray=[UIImage(named:"couple1.jpeg"),UIImage(named:"couple2.jpeg"),UIImage(named:"couple3.jpeg"),
+                    UIImage(named:"couple4.jpeg"), UIImage(named:"couple5.jpeg")];
     
     
+    @IBOutlet weak var milesApartText: UILabel!
+    @IBOutlet weak var meetupDate: UILabel!
     
     
     
@@ -35,6 +38,10 @@ class InfoViewController: UIViewController,UICollectionViewDelegate, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
+        
+
+        cell.contentMode = .scaleAspectFit
+        
         cell.img.image=imageArray[indexPath.row]
         return cell;
     }

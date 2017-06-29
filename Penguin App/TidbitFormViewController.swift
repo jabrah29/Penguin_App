@@ -43,7 +43,7 @@ class TidbitFormViewController: UIViewController {
         
         let data=Tidbit(headline: headlineText.text!, blurb: blurbText.text, notify: notifySwitch.isOn, timestamp: dateInFormat)
         
-        firebaseHandler.saveTidbitData(category: "data", subcategory: "Tidbit", data: data)
+        firebaseHandler.saveTidbitData(category: "data", subcategory: "Tidbit", data: data, user:TableController.current_user.id)
 
         let alertController = UIAlertController(title: "Success", message: "Hit back button to go back", preferredStyle: .alert)
         

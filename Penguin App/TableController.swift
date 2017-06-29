@@ -13,7 +13,6 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
 
     @IBOutlet weak var countDownCard: UIView!
 
-    var transfer:String!
     @IBOutlet weak var tidbitHeadlineText: UILabel!
     @IBOutlet weak var tidbitBlurbText: UITextView!
     @IBOutlet weak var profileImage: UIImageView!
@@ -23,6 +22,17 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
         
     }
     
+    static var current_user:User!
+    
+   var namesList = ["Jacob", "Vinutha"]
+    
+    
+    var groupList: [(String, [BulletinData])] = [("Jacob",[]),("Vinutha",[])]
+    
+    static func setUser(usr: User){
+        current_user=User(firstName: usr.first_name, lastName: usr.last_name, idInput: usr.id, otherPerson: usr.other_person)
+    }
+
     @IBAction func tableclick(_ sender: Any) {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "testid") as! PopupViewController
         self.addChildViewController(popOverVC)
@@ -41,24 +51,28 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
     @IBOutlet weak var tidbitTimeStamp: UILabel!
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bulletinListData.count // your number of cell here
+        return groupList[section].1.count // your number of cell here
     }
     
+
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: "TableViewCell",
             for: indexPath) as! BulletinTableViewCell
-         
-        cell.mainText.text=bulletinListData[indexPath.row].headline
-        cell.subText.text=bulletinListData[indexPath.row].details;
-        cell.icon.layer.cornerRadius=cell.icon.frame.size.width/2
-        cell.icon.clipsToBounds=true
+        if groupList[indexPath.section].1.count > 0 {
+
         
+        
+            cell.mainText.text=groupList[indexPath.section].1[indexPath.row].headline
+            cell.subText.text=groupList[indexPath.section].1[indexPath.row].details;
+            cell.icon.layer.cornerRadius=cell.icon.frame.size.width/2
+            cell.icon.clipsToBounds=true
+        }
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
     
@@ -69,29 +83,37 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
         
     }
     
-    func updateBlur() {
-        // 1
-        self.view.isHidden = true
-        // 2
-        UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, true, 1)
-        // 3
-        self.view.drawHierarchy(in: self.view.bounds, afterScreenUpdates: true)
-        // 4
-        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-    }
-    
 
     
     
     func updateBulletinList(newData:[BulletinData]){
         bulletinListData=newData
+        var currList=[BulletinData]()
+        var otherList=[BulletinData]()
+        for bulletin in bulletinListData{
+            if bulletin.userId == TableController.current_user.id {
+                
+                currList.append(bulletin)
+            }else{
+                otherList.append(bulletin)
+            }
+        }
+        groupList[0].1=currList
+        groupList[1].1=otherList
+
         self.bulletinList.reloadData()
     }
     
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return namesList[section]
+    }
+    
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        
+        
         
         // Do any additional setup after loading the view, typically from a nib.
         //self.tableView.dataSource=self;
@@ -130,13 +152,19 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
         self.profileImage.clipsToBounds=true
         
         fbhandler=FirebaseHandler()
-        fbhandler.loadTidbitData(view:self)
-        fbhandler.loadBulletinData(view: self)
+
+        
+        fbhandler.loadTidbitData(view:self, user: TableController.current_user.id)
+        fbhandler.loadBulletinData(view: self, user: TableController.current_user.id)
         
         
         
     }
     
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2;
+    }
 
     
     func addTapped(sender: AnyObject){
