@@ -12,7 +12,10 @@ import UIKit
 class TableController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var countDownCard: UIView!
+    @IBOutlet weak var hoursLeftText: UILabel!
+    @IBOutlet weak var minuteLeftText: UILabel!
 
+    @IBOutlet weak var daysLeftText: UILabel!
     @IBOutlet weak var tidbitHeadlineText: UILabel!
     @IBOutlet weak var tidbitBlurbText: UITextView!
     @IBOutlet weak var profileImage: UIImageView!
@@ -33,16 +36,7 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
         current_user=User(firstName: usr.first_name, lastName: usr.last_name, idInput: usr.id, otherPerson: usr.other_person)
     }
 
-    @IBAction func tableclick(_ sender: Any) {
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "testid") as! PopupViewController
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParentViewController: self)
-        self.present(popOverVC,animated: true)
-        popOverVC.view.layer.cornerRadius = 20
-        popOverVC.view.backgroundColor = UIColor(white:0, alpha: 0.9)
-    }
+
     
     var fbhandler: FirebaseHandler!
     
@@ -51,10 +45,13 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
     @IBOutlet weak var tidbitTimeStamp: UILabel!
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groupList[section].1.count // your number of cell here
+        return groupList[section].1.count
     }
     
-
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+    {
+        return true
+    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
@@ -74,6 +71,17 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "testid") as! PopupViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.event_title = String(groupList[indexPath.section].1[indexPath.row].headline)
+        popOverVC.event_date = String(groupList[indexPath.section].1[indexPath.row].date)
+        popOverVC.event_time = String(groupList[indexPath.section].1[indexPath.row].time)
+        popOverVC.event_detail = String(groupList[indexPath.section].1[indexPath.row].details)
+        popOverVC.event_created = String(groupList[indexPath.section].1[indexPath.row].timestamp)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+        
     }
     
     
@@ -87,10 +95,10 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     
     func updateBulletinList(newData:[BulletinData]){
-        bulletinListData=newData
+        let tempbulletinListData=newData
         var currList=[BulletinData]()
         var otherList=[BulletinData]()
-        for bulletin in bulletinListData{
+        for bulletin in tempbulletinListData{
             if bulletin.userId == TableController.current_user.id {
                 
                 currList.append(bulletin)
@@ -98,6 +106,7 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
                 otherList.append(bulletin)
             }
         }
+        bulletinListData=tempbulletinListData
         groupList[0].1=currList
         groupList[1].1=otherList
 
@@ -105,15 +114,30 @@ class TableController: UIViewController,UITableViewDataSource,UITableViewDelegat
     }
     
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if editingStyle == .delete
+        {
+            fbhandler.removeBulletin(bulletin: groupList[indexPath.section].1[indexPath.row])
+
+            
+           // updateBulletinList(newData: bulletinListData)
+              groupList[indexPath.section].1.remove(at: indexPath.row)
+
+            bulletinList.reloadData()
+        }
+    }
+    
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return namesList[section]
     }
     
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        
-        
+        fbhandler=FirebaseHandler()
         
         // Do any additional setup after loading the view, typically from a nib.
         //self.tableView.dataSource=self;

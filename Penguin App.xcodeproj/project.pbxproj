@@ -10,6 +10,8 @@
 		1614E1631EEB70F000DEE843 /* tabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1614E1621EEB70F000DEE843 /* tabController.swift */; };
 		16164D101EE7A265009466CB /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16164D0F1EE7A265009466CB /* TableController.swift */; };
 		1632E87C1EE7A67B005D3276 /* BulletinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */; };
+		163467CF1F058B60000E3DCF /* tidbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 163467CE1F058B60000E3DCF /* tidbit.png */; };
+		163467D11F059DBF000E3DCF /* InfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163467D01F059DBF000E3DCF /* InfoData.swift */; };
 		164E946A1EEC761B00E83050 /* bulletin.png in Resources */ = {isa = PBXBuildFile; fileRef = 164E94691EEC761B00E83050 /* bulletin.png */; };
 		16512C201EEB9CC4003130D8 /* TidbitFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16512C1F1EEB9CC4003130D8 /* TidbitFormViewController.swift */; };
 		166155CB1F0424C300A70D45 /* vin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 166155C51F0424C300A70D45 /* vin.jpeg */; };
@@ -68,6 +70,8 @@
 		1614E1621EEB70F000DEE843 /* tabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabController.swift; sourceTree = "<group>"; };
 		16164D0F1EE7A265009466CB /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		1632E87B1EE7A67B005D3276 /* BulletinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinTableViewCell.swift; sourceTree = "<group>"; };
+		163467CE1F058B60000E3DCF /* tidbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tidbit.png; sourceTree = "<group>"; };
+		163467D01F059DBF000E3DCF /* InfoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoData.swift; sourceTree = "<group>"; };
 		164E94691EEC761B00E83050 /* bulletin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bulletin.png; path = ../../bulletin.png; sourceTree = "<group>"; };
 		16512C1F1EEB9CC4003130D8 /* TidbitFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidbitFormViewController.swift; sourceTree = "<group>"; };
 		166155C51F0424C300A70D45 /* vin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vin.jpeg; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				16645CFF1EF88CF00053DC5E /* BulletinData.swift */,
 				16B2C45A1EFA25E600A632A2 /* Tidbit.swift */,
 				16C2CA9C1F02D7FB0064BC24 /* User.swift */,
+				163467D01F059DBF000E3DCF /* InfoData.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 		16C8A95F1EE099DF004326E0 = {
 			isa = PBXGroup;
 			children = (
+				163467CE1F058B60000E3DCF /* tidbit.png */,
 				166155D11F04AE1D00A70D45 /* cover.jpg */,
 				166155C51F0424C300A70D45 /* vin.jpeg */,
 				166155C61F0424C300A70D45 /* couple1.jpeg */,
@@ -354,6 +360,7 @@
 				166155CC1F0424C300A70D45 /* couple1.jpeg in Resources */,
 				16C8A9761EE099E0004326E0 /* LaunchScreen.storyboard in Resources */,
 				16C1E5941EFC820600176E9A /* down.png in Resources */,
+				163467CF1F058B60000E3DCF /* tidbit.png in Resources */,
 				166155D21F04AE1D00A70D45 /* cover.jpg in Resources */,
 				1687CD5E1EE904C00042AC2F /* chat.png in Resources */,
 				166155CB1F0424C300A70D45 /* vin.jpeg in Resources */,
@@ -494,6 +501,7 @@
 				16C2CA9D1F02D7FB0064BC24 /* User.swift in Sources */,
 				16164D101EE7A265009466CB /* TableController.swift in Sources */,
 				16B2C45B1EFA25E600A632A2 /* Tidbit.swift in Sources */,
+				163467D11F059DBF000E3DCF /* InfoData.swift in Sources */,
 				16645D001EF88CF00053DC5E /* BulletinData.swift in Sources */,
 				16F2A1201EF73D7C0001ED92 /* InfoViewController.swift in Sources */,
 				16645CFE1EF889370053DC5E /* FirebaseHandler.swift in Sources */,

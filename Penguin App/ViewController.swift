@@ -39,7 +39,7 @@ class ViewController: UIViewController, UIApplicationDelegate {
                 print(error)
             case .cancelled:
                 print("User cancelled login.")
-            case .success(let _, let _, let accessToken):
+            case .success( _, _, _):
                 print("Logged in!")
                 FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name,last_name, picture.type(large),email,updated_time"]).start(completionHandler: { (connection, result, error) -> Void in
                     if (error == nil){

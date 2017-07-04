@@ -9,6 +9,7 @@
 import UIKit
 
 class BulletinFormViewController: UIViewController {
+    @IBOutlet weak var timeText: UITextField!
 
     var picker = UIPickerView()
     @IBAction func saveForm(_ sender: Any) {
@@ -18,6 +19,7 @@ class BulletinFormViewController: UIViewController {
     @IBOutlet weak var detailsText: UITextView!
     var firebaseHandler:FirebaseHandler!
     let datePicker: UIDatePicker = UIDatePicker()
+    let timePicker: UIDatePicker = UIDatePicker()
 
     @IBOutlet weak var dateText: UITextField!
     @IBAction func dateAction(_ sender: UITextField) {
@@ -42,6 +44,35 @@ class BulletinFormViewController: UIViewController {
     }
     
 
+    @IBAction func timeAction(_ sender: UITextField) {
+        timePicker.datePickerMode = .time
+        sender.inputView = timePicker
+        let toolBar = UIToolbar()
+        toolBar.barStyle = .default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor(red: 92/255, green: 216/255, blue: 255/255, alpha: 1)
+        toolBar.sizeToFit()
+        
+        // Adding Button ToolBar
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneTimeClick))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelTimeClick))
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        timeText.inputAccessoryView = toolBar
+    }
+    
+    
+    func doneTimeClick() {
+        let dateFormatter1 = DateFormatter()
+        dateFormatter1.dateStyle = .none
+        dateFormatter1.dateFormat = "HH:mm"
+        timeText.text = dateFormatter1.string(from: timePicker.date)
+        timeText.resignFirstResponder()
+    }
+    func cancelTimeClick() {
+        timeText.resignFirstResponder()
+    }
     
     func doneClick() {
         let dateFormatter1 = DateFormatter()

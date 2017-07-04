@@ -48,6 +48,38 @@ class FirebaseHandler{
     }
     
     
+    func addInfo(){
+        self.ref=Database.database().reference()
+        let date = Date()
+        let calendar = Calendar.current
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy"
+        
+        let month = calendar.component(.month, from: date)
+        let day = calendar.component(.day, from: date)
+        
+        let goals=["Make time for each other", "Be nice and show love", "lose weight"]
+        
+        let info = InfoData(nd: "07-20-17", dm:String(month)+"/"+String(day)+"/2017", gls: goals,m: "07",d: "20")
+        self.ref.child("Info").childByAutoId().setValue(saveInfo(obj: info))
+    }
+    
+    
+    func removeBulletin(bulletin:BulletinData){
+        self.ref=Database.database().reference()
+        let profile = self.ref.child("Bulletin").child(bulletin.timestamp)
+        profile.observe(.value, with: { (snapshot) -> Void in
+            
+            
+            if snapshot.exists(){
+                
+                snapshot.ref.removeValue()
+            }
+        })
+
+    }
+    
+    
     func addNewUser(newUser: User){
         self.ref = Database.database().reference()
         
@@ -92,12 +124,15 @@ class FirebaseHandler{
     func saveBulletinData(user: String, category: String , data:BulletinData){
         self.ref = Database.database().reference()
         
-        self.ref.child(category).childByAutoId().setValue(saveBulletin(obj: data))
+        self.ref.child(category).child(data.timestamp).setValue(saveBulletin(obj: data))
         
         
         
     }
     
+    func saveInfo<T:InfoData>(obj:T) -> [AnyHashable:Any] {
+        return ["next_date":obj.next_date, "date_modified":obj.date_modified, "goals":obj.goals, "next_month":obj.next_month, "next_day":obj.next_day] as [AnyHashable:Any]
+    }
     
     
     
